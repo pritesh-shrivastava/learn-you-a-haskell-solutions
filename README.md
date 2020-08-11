@@ -1,6 +1,6 @@
 This repository includes my notes for the free online e-book, Learn You a Haskell for Great Good, written by Miran Lipovača. The book written in the form of a tutorial is available on this [link](http://learnyouahaskell.com/chapters)
 
-The Haskell code and problems from the book can be tried on an Online [REPL](https://tryhaskell.org/) or a local Haskel installation (stack recommended).
+The Haskell code and problems from the book can be tried on an Online [REPL](https://tryhaskell.org/) or a local Haskell installation (stack recommended).
 
 ## Useful commands
 
