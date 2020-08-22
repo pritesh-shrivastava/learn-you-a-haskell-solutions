@@ -6,6 +6,6 @@ The Haskell code and problems from the book can be tried on an Online [REPL](htt
 
 You can start an interpreter using the command `stack ghci` 
 
-To load a Haskell script into the interpreter, use the command `:l <script-name.hs>`
+To load a Haskell script into the interpreter, use `:load` or `:l`, for eg. `:l <script-name.hs>`
 
-To check the type of an expression, use `:t`, for eg., `:t "Pritesh"` should return `[Char]`
+To check the type of an expression, use `:type` or `:t`, for eg., `:t "Pritesh"` should return `[Char]`
