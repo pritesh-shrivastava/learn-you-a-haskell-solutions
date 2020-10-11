@@ -9,3 +9,7 @@ You can start an interpreter using the command `stack ghci`
 To load a Haskell script into the interpreter, use `:load` or `:l`, for eg. `:l <script-name.hs>`
 
 To check the type of an expression, use `:type` or `:t`, for eg., `:t "Pritesh"` should return `[Char]`
+
+To load a module in the interpreter, use `:m + Data.List`, say, for importing the module `Data.List`, or 
+use `:m + Data.List Data.Map Data.Set` to import more than 1 modules via the interpreter.
+
