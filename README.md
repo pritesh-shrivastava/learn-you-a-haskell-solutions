@@ -2,6 +2,8 @@ This repository includes my notes for the free online e-book, Learn You a Haskel
 
 The Haskell code and problems from the book can be tried on an Online [REPL](https://tryhaskell.org/) or a local Haskell installation (stack recommended).
 
+Online iHaskell notebook is available at [Binder](https://mybinder.org/v2/gh/gibiansky/IHaskell/master) but it can crash sometimes while building.
+
 ## Useful commands
 
 You can start an interpreter using the command `stack ghci` 
