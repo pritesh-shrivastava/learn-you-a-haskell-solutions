@@ -31,3 +31,42 @@ vectMult :: (Num t) => Vector t -> t -> Vector t
     
 scalarMult :: (Num t) => Vector t -> Vector t -> t  
 (Vector i j k) `scalarMult` (Vector l m n) = i*l + j*m + k*n  
+
+
+-- Deriving instances of Typeclasses
+data Person = Person { firstName :: String  
+                        , lastName :: String  
+                        , age :: Int  
+                        } deriving (Eq)  
+
+-- Since String & Int data types belong to typeclass Eq (== or /=), Person data type also belongs to Eq
+
+-- Type synonyms
+type String = [Char]
+-- String is not a new data type. Just a synonym for the already existing list of Chars
+
+-- Recursive Data Structures
+data List a = Empty | Cons a (List a) deriving (Show, Read, Eq, Ord)  
+
+-- Binary Search Tree
+data Tree a = EmptyTree | Node a (Tree a) (Tree a) deriving (Show, Read, Eq)  
+
+singleton :: a -> Tree a  
+singleton x = Node x EmptyTree EmptyTree  
+
+-- Inserting an element into a binary search tree    
+treeInsert :: (Ord a) => a -> Tree a -> Tree a  
+treeInsert x EmptyTree = singleton x  
+treeInsert x (Node a left right)   
+    | x == a = Node x left right  
+    | x < a  = Node a (treeInsert x left) right  
+    | x > a  = Node a left (treeInsert x right)  
+
+-- Checking if an element is present in a BST
+treeElem :: (Ord a) => a -> Tree a -> Bool  
+treeElem x EmptyTree = False  
+treeElem x (Node a left right)  
+    | x == a = True  
+    | x < a  = treeElem x left  
+    | x > a  = treeElem x right  
+
