@@ -70,3 +70,8 @@ treeElem x (Node a left right)
     | x < a  = treeElem x left  
     | x > a  = treeElem x right  
 
+-- Typeclasses have pretty much nothing to do with classes in languages like Java or Python
+
+-- Functor
+class Functor f where  
+    fmap :: (a -> b) -> f a -> f b  
