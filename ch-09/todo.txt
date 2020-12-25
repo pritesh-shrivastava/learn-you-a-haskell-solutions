@@ -1,0 +1,6 @@
+get up
+brush
+bath
+work
+eat
+sleep
