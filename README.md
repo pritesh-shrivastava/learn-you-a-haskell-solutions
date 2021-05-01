@@ -6,6 +6,8 @@ Online iHaskell notebook is available at [Binder](https://mybinder.org/v2/gh/gib
 
 ## Useful commands
 
+#### Haskell Interpreter
+
 You can start an interpreter using the command `stack ghci` 
 
 To load a Haskell script into the interpreter, use `:load` or `:l`, for eg. `:l <script-name.hs>`
@@ -15,7 +17,12 @@ To check the type of an expression, use `:type` or `:t`, for eg., `:t "Pritesh"`
 To load a module in the interpreter, use `:m + Data.List`, say, for importing the module `Data.List`, or 
 use `:m + Data.List Data.Map Data.Set` to import more than 1 modules via the interpreter.
 
+#### Running a script on the command line
+
+Option 1 : 
 To compile a Haskell program, run `stack ghc <name-of-program.hs>` in the folder where the program is present.
 To run the compiled program, now run `./<name-of-program.hs>`.
-To run a Haskell program on the fly, use `stack runhaskell helloworld.hs`
+
+Option 2: 
+To run a Haskell program on the fly, instead of compiling first, use `stack runhaskell helloworld.hs`
 
